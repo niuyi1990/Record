@@ -47,4 +47,4 @@
 ######       注解统一使用Butterknife库
 ######       网络请求统一使用Rxjava + Retrofit + okhttp库#
 ######       日志统一使用Logger库
-######        滑动删除统一使用AndroidSwipeLayout库
+######       滑动删除统一使用AndroidSwipeLayout库
