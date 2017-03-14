@@ -1,0 +1,39 @@
+# Record
+###用来记录日常学习总结
+####1、从ActivityA跳转到ActivityB,并且ActivityA需要携带参数，ActivityB需要获取参数,可使用如下方法（不用再关注key了）
+    public class ActivityA extends BaseActivity {
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+            findViewById(R.id.bt).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    ActivityB.startActivityB(MainActivity.this,"Hello World");
+                }
+            });
+        }
+    }
+    
+    public class ActivityB extends BaseActivity {
+        @Override
+        protected void onCreate(@Nullable Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.second_actiivty);
+            String key = getIntent().getStringExtra("key");
+        }
+
+        public static void startActivityB(Context context, String str) {
+            Intent intent = new Intent(context, SecondActivity.class);
+            intent.putExtra("key", str);
+            context.startActivity(intent);
+        }
+    }
+    
+    如果有 startActivityForResult回调,道理同样:
+    
+     public static void startActivityBForResult(Activity activity, String str, int code) {
+        Intent intent = new Intent(activity, SecondActivity.class);
+        intent.putExtra("key", str);
+        activity.startActivityForResult(intent, code);
+    }
