@@ -188,6 +188,7 @@
 ######圆形：
 
     public class GlideCircleTransform extends BitmapTransformation {
+    
         public GlideCircleTransform(Context context) {
             super(context);
         }
