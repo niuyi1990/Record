@@ -37,3 +37,4 @@
         intent.putExtra("key", str);
         activity.startActivityForResult(intent, code);
     }
+####2、TextView中使用tools:text = "我是显示的文本"代替android:text = "我是显示的文本",前者只出现在预览中，不会出现在编译后的代码里
