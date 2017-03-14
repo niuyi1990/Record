@@ -61,4 +61,15 @@
     <style name="ClubToolbar" parent="Widget.AppCompat.Toolbar">
         <item name="contentInsetStart">0dp</item><!-- 设置该属性解决空白部分-->
     </style>
-           
+####6、自定义可扩展的TabLayout
+######      FlycoTabLayout
+######      TabPagerIndicatorDemo
+######      MagicIndicator
+######      RecyclerTabLayout
+######      Dachshund-Tab-Layout 
+######      SmartTabLayout
+######      PagerSlidingTabStrip
+######      NavigationTabStrip
+######      Android-ViewPagerIndicator
+######      VerticalViewPagerWithTabLayout
+######      LivingTabs
