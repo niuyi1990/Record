@@ -56,7 +56,6 @@
     public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
        isPullToRefresh = verticalOffset == 0;
     }       
-    
 ####5、使用ToolBar定义title布局时，toolbar左侧预留问题解决：
      <!-- 解决toolbar左边距问题-->
     <style name="ClubToolbar" parent="Widget.AppCompat.Toolbar">
