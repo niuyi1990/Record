@@ -45,5 +45,5 @@
 ######       使用到上拉加载更多统一使用BaseRecyclerViewAdapterHelper库
 ######       图片请求统一使用Glide库
 ######       注解统一使用Butterknife库
-######       网络请求统一使用Rxjava + Retrofit + okhttp库
-             
+######       网络请求统一使用Rxjava + Retrofit + okhttp库#
+######       日志统一使用Logger库
