@@ -72,4 +72,5 @@
 ######      NavigationTabStrip
 ######      Android-ViewPagerIndicator
 ######      VerticalViewPagerWithTabLayout
-######      LivingTabs
+######      LivingTabs
+######      ScalableTabIndicator
