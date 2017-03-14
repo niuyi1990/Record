@@ -52,8 +52,8 @@
 ####4、AppBarLayout结合下拉刷新遇到的坑及其解决
 ######        遇到的坑：当AppBarLayout包裹有下拉刷新控件时，会有滑动事件冲突，既AppBarLayout包裹的空间没有全部显示就会触发下拉刷新。
 ######        解决方案：监听AppBarLayout的OnOffsetChangedListener，当verticalOffset=0时设置可下拉刷新。
-     @Override
-              public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
-                        isPullToRefresh = verticalOffset == 0;
-              }         
+    @Override
+    public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
+       isPullToRefresh = verticalOffset == 0;
+    }         
            
