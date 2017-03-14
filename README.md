@@ -224,8 +224,8 @@
         @Override public String getId() {
             return getClass().getName();
         }
-        
-    }
+    }
+    
 ######使用
 
     Glide.with(context)
