@@ -1,4 +1,4 @@
-# Record
+# 日常工作中遇到的问题以及学习到的新东西
 ###用来记录日常学习总结
 ####1、从ActivityA跳转到ActivityB,并且ActivityA需要携带参数，ActivityB需要获取参数,可使用如下方法（不用再关注key了）
     public class ActivityA extends BaseActivity {
