@@ -61,7 +61,7 @@
     <style name="ClubToolbar" parent="Widget.AppCompat.Toolbar">
         <item name="contentInsetStart">0dp</item><!-- 设置该属性解决空白部分-->
     </style>
-####6、自定义可扩展的TabLayout
+####6、自定义可扩展的TabLayout，比官方可扩展性强
 ######FlycoTabLayout
 ######TabPagerIndicatorDemo
 ######MagicIndicator
