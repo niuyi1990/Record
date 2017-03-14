@@ -221,4 +221,11 @@
         @Override public String getId() {
             return getClass().getName();
         }
-    }
+    }
+######使用
+    Glide.with(context)
+            .load(url)
+            .placeholder(emptyImg)
+            .error(erroImg)
+            .transform(new GlideCircleTransform(context))
+            .into(iv);
