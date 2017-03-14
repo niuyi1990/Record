@@ -55,5 +55,5 @@
     @Override
     public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
        isPullToRefresh = verticalOffset == 0;
-    }         
+    }       
            
