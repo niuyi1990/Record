@@ -40,8 +40,8 @@
     
 ####2、TextView中使用tools:text = "我是显示的文本"代替android:text = "我是显示的文本",前者只出现在预览中，不会出现在编译后的代码里
 
-####3、项目中: 
-######       有使用自定义下拉刷新的统一使用android-Ultra-Pull-To-Refresh库
+####3、项目中统一使用如下库: 
+######       自定义下拉刷新的统一使用android-Ultra-Pull-To-Refresh库
 ######       使用到上拉加载更多统一使用BaseRecyclerViewAdapterHelper库
 ######       图片请求统一使用Glide库
 ######       注解统一使用Butterknife库
