@@ -74,3 +74,65 @@
 ######    VerticalViewPagerWithTabLayout
 ######    LivingTabs
 ######    ScalableTabIndicator
+
+####7、Java保留指定小数位数
+
+    public class DecimalUtils {
+
+    /**
+     * 1.按四舍五入保留指定小数位数，位数不够用0补充
+     * @param o 格式化前的小数
+     * @param newScale 保留小数位数
+     * @return 格式化后的小数
+     */
+    public static String formatDecimal1(Object o, int newScale) {
+        return String.format("%." + newScale + "f", o);
+    }
+
+    /**
+     * 2.1按四舍五入保留指定小数位数，位数不够用0补充
+     * @param d 格式化前的小数
+     * @param newScale 保留小数位数
+     * @return 格式化后的小数
+     */
+    public static String formatDecimal21(double d, int newScale) {
+        String pattern = "0.";
+        for (int i = 0; i < newScale; i++) {
+            pattern += "0";
+        }
+        DecimalFormat df = new DecimalFormat(pattern);
+        return df.format(d);
+    }
+
+    /**
+     * 2.2按四舍五入保留指定小数位数，小数点后仅保留有效位数
+     * @param d 格式化前的小数
+     * @param newScale 保留小数位数
+     * @return 格式化后的小数
+     */
+    public static String formatDecimal22(double d, int newScale) {
+        String pattern = "#.";
+        for (int i = 0; i < newScale; i++) {
+            pattern += "#";
+        }
+        DecimalFormat df = new DecimalFormat(pattern);
+        return df.format(d);
+    }
+
+    /**
+     * 3.按指定舍入模式保留指定小数位数
+     * @param d 格式化前的小数
+     * @param newScale 保留小数位数
+     * @param roundingMode 舍入模式
+     *                         (RoundingMode.UP始终进一/DOWN直接舍弃/
+     *                                     CEILING正进负舍/FLOOR正舍负进/
+     *                                    HALF_UP四舍五入/HALF_DOWN五舍六进/
+     *                                    HALF_EVEN银行家舍入法/UNNECESSARY抛出异常)
+     * @return 格式化后的小数
+     */
+    public static double formatDecimal3(double d, int newScale, RoundingMode roundingMode) {
+        BigDecimal bd = new BigDecimal(d).setScale(newScale, roundingMode);
+        return bd.doubleValue();
+    }
+
+    }
