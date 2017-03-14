@@ -146,6 +146,7 @@
 
 ####9、Glide加载设置圆角、圆形图：
 ######圆角:
+
     public class GlideRoundTransform extends BitmapTransformation {
 
         private static float radius = 0f;
@@ -185,6 +186,7 @@
         }
     }
 ######圆形：
+
     public class GlideCircleTransform extends BitmapTransformation {
         public GlideCircleTransform(Context context) {
             super(context);
@@ -223,6 +225,7 @@
         }
     }
 ######使用
+
     Glide.with(context)
             .load(url)
             .placeholder(emptyImg)
