@@ -136,3 +136,10 @@
         }
 
     }
+    
+####8、String中占位符的使用
+        <string name="loading">离下班回家还剩%1$s分钟</string>
+      
+        String temp = getResources().getString(R.string.loading);
+        String timeTip = String.format(temp,38);
+        结果：离下班回家还剩38分钟
