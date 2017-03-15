@@ -244,3 +244,7 @@
             .error(erroImg)
             .transform(new GlideCircleTransform(context))
             .into(iv);
+
+#### 10、嵌套滚动的Bug
+
+    安卓4.4系统xml设置android:nestedScrollingEnabled="false"无效，必须代码设置setNestedScrollingEnabled(false);
