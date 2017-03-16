@@ -248,3 +248,14 @@
 #### 10、嵌套滚动的Bug
 
     安卓4.4系统xml设置android:nestedScrollingEnabled="false"无效，必须代码设置setNestedScrollingEnabled(false);
+
+#### 11、layout转Bitmap方法
+public void showPic(View view) {
+    int width = picmontageRoot.getMeasuredWidth();
+    int height = picmontageRoot.getMeasuredHeight();
+    Bitmap b = Bitmap.createBitmap(width, height, Bitmap.Config.RGB_565);
+    Canvas canvas = new Canvas(b);
+    picmontageRoot.draw(canvas);
+    img.setImageBitmap(b);
+}
+
