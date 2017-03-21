@@ -259,4 +259,5 @@
             picmontageRoot.draw(canvas);
             img.setImageBitmap(b);
       }
-
+      
+#### 12、 TextView中文字通过SpannableString来设置超链接、颜色、字体等属性等
